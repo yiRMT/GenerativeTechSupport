@@ -53,7 +53,7 @@ export default function Home() {
     console.log(form)
 
     localStorage.setItem('form', JSON.stringify(form))
-/*
+
     try {
       setLoading(true)
       setResponse('')
@@ -71,7 +71,7 @@ export default function Home() {
       setLoading(false)
       console.log("handleSubmit", error)
       setError(error)
-    }*/
+    }
   }
 
   return (
