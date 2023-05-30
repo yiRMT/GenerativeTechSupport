@@ -21,9 +21,10 @@ const requestGPT = async (apiKey, language, errorMessage) => {
       },
     });
     
-    return response.data.choices[0].message.content;
+    return { props: { response: response.data.choices[0].message.content } }
   } catch (error) {
-    console.log("requestGPT", error);
+    console.log("requestGPT", error.message);
+    return { props: { error: error.message } }
   }
 }
 
