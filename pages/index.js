@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { Alert, Autocomplete, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput, TextField } from '@mui/material'
 import requestGPT from '@/libs/requestGPT'
@@ -75,6 +75,10 @@ export default function Home() {
   }
 
   return (
+    <>
+    <Head>
+      <title>Generative Tech Support</title>
+    </Head>
     <div className='mx-4'>
       <form className='flex flex-col gap-4'>
         <FormControl>
@@ -147,5 +151,6 @@ export default function Home() {
       )
       }
     </div>
+    </>
   )
 }
