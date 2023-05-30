@@ -15,7 +15,7 @@ const Footer = () => {
             </Link>
           </p>
           <p>
-            This project does not send any data to the server.
+            This project only sends your data to OpenAI.
             All data will be saved locally in your browser.
           </p>
         </div>
